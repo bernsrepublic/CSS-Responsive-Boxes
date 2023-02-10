@@ -1,9 +1,11 @@
 body {
   background: blanchedalmond;
 }
+/*
 * {
-  border: 2px solid black;
+  border: 2px solid black; /remove once done
 }
+*/
 .container {
   padding: 0;
   max-width: 1000px;
@@ -11,7 +13,6 @@ body {
   list-style: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
 }
 .flex-item {
   background: turquoise;
@@ -22,16 +23,15 @@ body {
   color: white;
   font-weight: bold;
   font-size: 2em;
-  text-align: center;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  border: 2px solid gray;
 }
 
 .flexB,
 .flexC {
   flex-grow: 1;
-  justify-self: center;
-  align-items: center;
 }
 
 .flexA {
@@ -41,11 +41,8 @@ body {
 
 .flexB {
   width: 75%;
-  justify-self: center;
-  align-items: center;
+  height: 200px;
 }
 .flexC {
   width: 15%;
-  justify-self: center;
-  align-items: center;
 }
