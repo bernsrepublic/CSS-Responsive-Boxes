@@ -1,3 +1,66 @@
 body {
   background: papayawhip;
 }
+/*
+* {
+  border: 2px solid black; /remove once done
+}
+*/
+.container {
+  padding: 0;
+  max-width: 1000px;
+  margin: 3rem auto;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-item {
+  background: turquoise;
+  padding: 5px;
+  width: 150px;
+  margin: 5px;
+  line-height: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+}
+
+.flexC,
+.flexD,
+flexE,
+flexF {
+  flex-grow: 1;
+}
+
+.flexA {
+  flex-grow: 4;
+  width: 100%;
+  order: 0;
+}
+
+.flexB {
+  width: 75%;
+  height: 200px;
+  flex-grow: 3;
+  order: 0;
+}
+.flexC {
+  width: 25%;
+  order: 0;
+}
+.flexD {
+  width: 25%;
+  order: 0;
+}
+.flexE {
+  width: 25%;
+  order: 0;
+}
+.flexF {
+  width: 100%;
+  order: 0;
+}
