@@ -1,18 +1,30 @@
 body {
   background: papayawhip;
 }
- /*remove border once completed. border allows visibility of the outline better.*/
-* {
+/*remove border once completed. border allows visibility of the outline better.*/
+/** {
   border: 2px solid black; /remove once done
 }
+*/
 
 .container {
   padding: 0;
   max-width: 1000px;
-  margin: 3rem auto;
-  list-style: none;
   display: flex;
   flex-flow: row wrap;
+}
+.container2 {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container3 {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
 }
 .flex-item {
   background: turquoise;
@@ -32,42 +44,36 @@ body {
 .flexA {
   flex-grow: 2;
   width: 100%;
-  order: 1;
 }
 
 .flexB {
-  width: 72%;
+  width: 100%;
   height: 70px;
-  order: 2;
 }
 .flexC {
-  width: 20%;
-  order: 4;
-
+  width: 25%;
+  flex-grow: 1;
 }
 .flexD {
-  width:20%;
-  order: 5;
-
+  width: 25%;
+  flex-grow: 1;
 }
 .flexE {
-  width: 20%;
-  order: 6;
-
+  width: 25%;
+  flex-grow: 1;
 }
 .flexF {
-  width: 22%;
-  height: 250px;
-  order: 3;
-  flex-direction: column ;
+  width: 20%;
+  height: 166px;
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
   .flexA {
-    width: 375px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    order: 1;
+    order: 0;
   }
 
   .flexB {
@@ -77,6 +83,7 @@ body {
     flex-wrap: wrap;
     order: 2;
   }
+
   .flexC {
     width: 75px;
     display: flex;
@@ -95,11 +102,29 @@ body {
     flex-wrap: wrap;
     order: 5;
   }
+  /*
+  /*
+  .container2 {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border-color: blue;
+    order: 1;
+  }
+  */
   .flexF {
-    width: 375px;
-    height:70px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-flow: row;
+    order: 6;
+  }
+  .container3 {
+    padding: 0;
+    width: 100%;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    order: 6;
   }
 }
