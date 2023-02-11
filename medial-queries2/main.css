@@ -1,11 +1,11 @@
 body {
   background: papayawhip;
 }
-/*
+ /*remove border once completed. border allows visibility of the outline better.*/
 * {
   border: 2px solid black; /remove once done
 }
-*/
+
 .container {
   padding: 0;
   max-width: 1000px;
@@ -29,38 +29,77 @@ body {
   border: 2px solid gray;
 }
 
-.flexC,
-.flexD,
-flexE,
-flexF {
-  flex-grow: 1;
-}
-
 .flexA {
-  flex-grow: 4;
+  flex-grow: 2;
   width: 100%;
-  order: 0;
+  order: 1;
 }
 
 .flexB {
-  width: 75%;
-  height: 200px;
-  flex-grow: 3;
-  order: 0;
+  width: 72%;
+  height: 70px;
+  order: 2;
 }
 .flexC {
-  width: 25%;
-  order: 0;
+  width: 20%;
+  order: 4;
+
 }
 .flexD {
-  width: 25%;
-  order: 0;
+  width:20%;
+  order: 5;
+
 }
 .flexE {
-  width: 25%;
-  order: 0;
+  width: 20%;
+  order: 6;
+
 }
 .flexF {
-  width: 100%;
-  order: 0;
+  width: 22%;
+  height: 250px;
+  order: 3;
+  flex-direction: column ;
+}
+
+@media (max-width: 768px) {
+  .flexA {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .flexB {
+    width: 375px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
+  .flexC {
+    width: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+  }
+  .flexD {
+    width: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 4;
+  }
+  .flexE {
+    width: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 5;
+  }
+  .flexF {
+    width: 375px;
+    height:70px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 6;
+  }
 }

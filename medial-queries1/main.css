@@ -1,7 +1,7 @@
 body {
   background: blanchedalmond;
 }
-/*
+/* remove border once completed. border allows visibility of the outline better.
 * {
   border: 2px solid black; /remove once done
 }
@@ -28,7 +28,6 @@ body {
   align-items: center;
   border: 2px solid gray;
 }
-
 .flexB,
 .flexC {
   flex-grow: 1;
@@ -45,4 +44,23 @@ body {
 }
 .flexC {
   width: 15%;
+}
+
+@media (max-width: 768px) {
+  .flexA {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flexB {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexC {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
