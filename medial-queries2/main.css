@@ -49,6 +49,7 @@ body {
 .flexB {
   width: 100%;
   height: 70px;
+  flex-grow: 1;
 }
 .flexC {
   width: 25%;

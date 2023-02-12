@@ -1,27 +1,31 @@
 body {
-  background: peachpuff;
-}
-body {
   background: papayawhip;
 }
 /*remove border once completed. border allows visibility of the outline better.*/
-* {
-  border: 2px solid black;
+/** {
+  border: 2px solid black; /remove once done
 }
+*/
 
 .container {
   padding: 0;
   max-width: 1000px;
-  margin: 3rem auto;
-  list-style: none;
   display: flex;
   flex-flow: row wrap;
 }
-/*.container2 {
+.container2 {
+  padding: 0;
+  width: 100%;
   display: flex;
-  width: 90%;
-  justify-content: space-between; }*/
-
+  flex-flow: row wrap;
+}
+.container3 {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
 .flex-item {
   background: turquoise;
   padding: 5px;
@@ -38,76 +42,46 @@ body {
 }
 
 .flexA {
-  flex-grow: 4;
+  flex-grow: 2;
   width: 100%;
-  order: 1;
-  display: flex;
-  flex-flow: row wrap;
 }
-
 .flexB {
-  width: 20%;
-  height: 70px;
+  width: 25%;
   flex-grow: 1;
-  order: 2;
-  display: flex;
-  flex-flow: row wrap;
 }
 .flexC {
-  width: 20%;
-  height: 70px;
+  width: 25%;
   flex-grow: 1;
-  order: 3;
-  display: flex;
-  flex-flow: row wrap;
 }
 .flexD {
-  width: 20%;
-  height: 70px;
+  width: 25%;
   flex-grow: 1;
-  order: 4;
-  display: flex;
-  flex-flow: row wrap;
 }
 .flexE {
-  width: 20%;
-  height: 70px;
+  width: 25%;
   flex-grow: 1;
-  order: 6;
-  display: flex;
-  flex-flow: row wrap;
 }
 .flexF {
-  width: 20%;
-  height: 70px;
+  width: 25%;
   flex-grow: 1;
-  order: 7;
-  display: flex;
-  flex-flow: row wrap;
 }
 .flexG {
-  width: 20%;
-  height: 70px;
+  width: 25%;
   flex-grow: 1;
-  order: 8;
-  display: flex;
-  flex-flow: row wrap;
 }
 .flexH {
   width: 20%;
-  height: 140px;
-  flex-grow: 2;
-  order: 5;
-  display: flex;
-  flex-flow: row wrap;
+  height: 166px;
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
   .flexA {
-    width: 375px;
+    width: 100%;
+    height: 60px;
     display: flex;
     flex-wrap: wrap;
-    order: 1;
+    order: 0;
   }
 
   .flexB {
@@ -116,6 +90,7 @@ body {
     flex-wrap: wrap;
     order: 2;
   }
+
   .flexC {
     width: 75px;
     display: flex;
@@ -130,30 +105,45 @@ body {
   }
   .flexE {
     width: 75px;
-    height: 70px;
     display: flex;
     flex-wrap: wrap;
     order: 5;
   }
-  .flexF {
-    width: 75px;
-    height: 70px;
+  /*
+  /*
+  .container2 {
+    padding: 0;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    border-color: blue;
+    order: 1;
+  }
+  */
+  .flexF {
+    width: 75;
+    display: flex;
+    flex-flow: row;
     order: 6;
   }
   .flexG {
     width: 75px;
-    height: 70px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row;
     order: 6;
   }
   .flexH {
-    width: 375px;
-    height: 140px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-flow: row;
+    order: 6;
+  }
+  .container3 {
+    padding: 0;
+    width: 100%;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    order: 6;
   }
 }
